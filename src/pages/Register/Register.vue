@@ -83,11 +83,12 @@ export default {
                 if (res.data.msg == "OK" && res.data.status == 200) {
                     this.$confirm('注册成功', '注册成功', {
                         confirmButtonText: '确定',
+                        cancelButtonText:"继续注册",
                         type: 'success',
                         center: true
                         }).then(() => {
                             this.$router.push({
-                                path:"/login"
+                                path:"/"
                             }) 
                         });
                 }             
