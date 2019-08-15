@@ -129,7 +129,7 @@
                 </div>
                 <div class="hr"></div>
             </div>
-            <el-button class="btn" @click="commitOrder">提交订单</el-button>
+            <el-button class="btn" @click.once="commitOrder">提交订单</el-button>
         </div>
     </div>
 </template>
