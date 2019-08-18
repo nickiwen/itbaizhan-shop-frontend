@@ -36,6 +36,7 @@ export default {
 .details-eval-p-parameter {
     height: 171px;
     margin-top: 10px;
+    overflow: hidden;
 }
 .details-eval-p-parameter-list {
     padding: 20px 0 15px;

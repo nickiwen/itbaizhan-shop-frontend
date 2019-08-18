@@ -13,7 +13,7 @@
                     <p id="number">支付方式：</p>
                     <p>货到付款</p>
                     <p id="number">预计到达：</p>
-                    <p>{{ GetDateStr(2) }}</p>
+                    <p>{{ GetDateStr(2) }} 09:00-15:00 送达</p>
                     <a href="#">查看订单详情</a>|
                     <a href="#">继续逛逛</a>
                     <hr />

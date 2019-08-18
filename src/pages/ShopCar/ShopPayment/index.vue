@@ -75,7 +75,7 @@
                             <!-- 准时达 -->
                             <div class="shop_time">
                                 <span class="shop_time_send">标 准 达：</span>
-                                <div class="shop_time_order">预计 8月13日[周二] 09:00-15:00 送达</div>
+                                <div class="shop_time_order">预计 {{ GetDateStr(2) }} 09:00-15:00 送达</div>
                                 <a href="#" class="add">修改</a>
                             </div>
                             <!-- 空白 -->
@@ -167,6 +167,14 @@ export default {
                 currentArr.push(temp)
             }
             return currentArr;
+        },
+        GetDateStr(AddDayCount) {
+            var dd = new Date();
+            dd.setDate(dd.getDate() + AddDayCount); //获取AddDayCount天后的日期
+            var y = dd.getFullYear();
+            var m = dd.getMonth() + 1; //获取当前月份的日期
+            var d = dd.getDate();
+            return y + "-" + m + "-" + d;
         },
         // 解析cookie
         formatCookie(cookie){

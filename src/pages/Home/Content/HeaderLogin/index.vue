@@ -8,7 +8,7 @@
                      </a>
                  </div>
                  <div class="user-show">
-                    <p>Hi~欢迎来到易购</p>
+                    <p>Hi~{{ username }}欢迎来到易购</p>
                     <p>
                         <a href="#">登录</a>
                         <a href="#">注册</a>
@@ -137,10 +137,14 @@
     </div>
 </template>
 <script>
+import { mapState } from "vuex"
 export default {
     name:'HeaderLogin',
     data(){
         return {}
+    },
+    computed: {
+        ...mapState(["username"])
     },
     components:{}
 }
@@ -188,6 +192,7 @@ export default {
                 overflow: hidden;
                 line-height: 20px;
                 width: 100%;
+                font-size: 12px;
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 color: #888;
