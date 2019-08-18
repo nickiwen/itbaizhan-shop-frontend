@@ -5,28 +5,28 @@ module.exports = {
     devServer: {
         proxy: {
             '/api': {
-                target: 'http://192.168.1.102:9030',
+                target: 'http://192.168.1.102:8080',
                 pathRewrite: {
                     '^/api': ''
                 },
                 changeOrigin: true
             },
             '/search_api': {
-                target: 'http://192.168.1.102:9100',
+                target: 'http://192.168.1.102:8080',
                 pathRewrite: {
                     '^/search_api': ''
                 },
                 changeOrigin: true
             },
             '/shopcar_api': {
-                target: 'http://192.168.1.102:9040',
+                target: 'http://192.168.1.102:8080',
                 pathRewrite: {
                     '^/shopcar_api': ''
                 },
                 changeOrigin: true
             },
             "/payment_api": {
-                target: 'http://192.168.1.102:9111',
+                target: 'http://192.168.1.102:8080',
                 pathRewrite: {
                     '^/payment_api': ''
                 },
@@ -40,7 +40,7 @@ module.exports = {
                 changeOrigin: true
             },
             "/register_api": {
-                target: 'http://192.168.1.102:9090',
+                target: 'http://192.168.1.102:8080',
                 pathRewrite: {
                     '^/register_api': ''
                 },
